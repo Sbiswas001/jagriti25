@@ -1,12 +1,30 @@
-/* Navbar styles */
-*{
-  margin: 0;
+/* General Styles */
+* {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
 }
 
+body {
+  background-color: #1c1943;
+  color: white;
+}
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #1c1943;
+  --secondary-color: #6f22b8;
+  --highlight-bg: #6f22b8; /* Example highlight background color */
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar Section */
 .navbar {
-  background: #333;
-  color: #fff;
+  background: var(--primary-color);
+  color: white;
   padding: 10px 20px;
 }
 
@@ -20,33 +38,34 @@
   height: 50px;
 }
 
-.nav-links .nav-list {
+.navbar-nav .navbar-links {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.nav-item {
+.navbar-item {
   margin: 0 15px;
 }
 
-.nav-link {
-  color: #fff;
+.navbar-link {
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-link:hover {
+.navbar-link:hover {
   color: #007bff;
 }
 
-/* Carousel styles */
+/* Carousel Section */
 .carousel {
   position: relative;
   width: 100%;
   height: 300px;
   overflow: hidden;
+  background: var(--highlight-bg);
 }
 
 .carousel-slide {
@@ -60,15 +79,15 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  color: #fff;
   text-align: center;
+  color: white;
 }
 
 .carousel-title {
   margin: 0;
   padding-top: 100px;
   font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px var(--shadow-color);
 }
 
 .carousel-text {
@@ -78,23 +97,25 @@
 
 .btn-primary {
   padding: 10px 20px;
-  background: #007bff;
-  color: #fff;
+  background: var(--secondary-color);
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   display: inline-block;
   margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: #0056b3;
+  background: #6f22b8;
 }
 
-/* Section styles */
+/* Section Styles */
 .section {
   padding: 50px 20px;
-  background: #f9f9f9;
+  background: var(--primary-color);
+  color: white;
 }
 
 .section-content {
@@ -106,6 +127,7 @@
 .section-title {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: var(--secondary-color);
 }
 
 .section-text {
@@ -115,19 +137,20 @@
 
 .btn-secondary {
   padding: 10px 20px;
-  background: #6c757d;
-  color: #fff;
+  background: #6c44a0;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   display: inline-block;
+  transition: background 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background: #5a6268;
+  background: #59388a;
 }
 
-/* Highlights grid */
+/* Highlights Grid */
 .highlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -135,16 +158,17 @@
 }
 
 .highlight-item {
-  background: #fff;
+  background: var(--highlight-bg);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-color);
   text-align: left;
 }
 
 .highlight-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: var(--secondary-color);
 }
 
 .highlight-text {
@@ -152,7 +176,7 @@
   margin-bottom: 20px;
 }
 
-/* Sponsor logos */
+/* Sponsor Logos */
 .sponsor-logos {
   display: flex;
   justify-content: center;
@@ -162,14 +186,16 @@
 
 .sponsor-logo {
   height: 100px;
+  filter: brightness(0.8);
 }
 
-/* Footer styles */
+/* Footer Styles */
 .footer {
-  background: #333;
-  color: #fff;
+  background: var(--primary-color);
+  color: white;
   padding: 20px 0;
   text-align: center;
+  border-top: 1px solid var(--secondary-color);
 }
 
 .footer-logo {
@@ -179,4 +205,5 @@
 
 .footer-text {
   font-size: 0.9rem;
+  color: white;
 }

@@ -62,3 +62,9 @@ body {
 .view-details:hover {
     background-color: #d32f2f;
 }
+
+@media (max-width: 768px){
+    .event.open{
+        max-height: 600px;
+    }
+}
