@@ -1,33 +1,23 @@
-/* Global Reset and Base Styles */
+/* General Styles */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --primary-color: #1a1a2e; /* Dark background */
-  --secondary-color: #8a2be2; /* Violet accent */
-  --text-color: #e0e0e0; /* Light gray for text */
-  --font-size: 16px;
-  --spacing: 15px;
-  --highlight-bg: #252540; /* Slightly lighter dark for cards */
-  --shadow-color: rgba(0, 0, 0, 0.4); /* Subtle shadows */
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: var(--font-size);
-  color: var(--text-color);
-  background: var(--primary-color);
+  background-color: #1c1943;
+  color: white;
 }
 
-/* Navbar Styles */
+/* Navbar Section */
 .navbar {
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: #1c1943;
+  color: white;
   padding: 10px 20px;
-  border-bottom: 1px solid var(--secondary-color);
 }
 
 .navbar-container {
@@ -38,54 +28,30 @@ body {
 
 .logo {
   height: 50px;
-  cursor: pointer;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list {
+.nav-links .nav-list {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
-  margin: 0 var(--spacing);
+  margin: 0 15px;
 }
 
 .nav-link {
-  color: var(--text-color);
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--secondary-color);
-  outline: none;
+.nav-link:hover {
+  color: #007bff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-item {
-    margin: var(--spacing) 0;
-  }
-}
-
-/* Carousel Styles */
+/* Carousel Section */
 .carousel {
   position: relative;
   width: 100%;
@@ -105,8 +71,8 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  color: var(--text-color);
   text-align: center;
+  color: white;
 }
 
 .carousel-title {
@@ -124,23 +90,24 @@ body {
 .btn-primary {
   padding: 10px 20px;
   background: var(--secondary-color);
-  color: var(--text-color);
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   display: inline-block;
   margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: #6f22b8; /* Slightly darker violet */
+  background: #6f22b8;
 }
 
 /* Section Styles */
 .section {
   padding: 50px 20px;
   background: var(--primary-color);
-  color: var(--text-color);
+  color: white;
 }
 
 .section-content {
@@ -162,12 +129,13 @@ body {
 
 .btn-secondary {
   padding: 10px 20px;
-  background: #6c44a0; /* Darker violet */
-  color: var(--text-color);
+  background: #6c44a0;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   display: inline-block;
+  transition: background 0.3s ease;
 }
 
 .btn-secondary:hover {
@@ -198,7 +166,6 @@ body {
 .highlight-text {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: var(--text-color);
 }
 
 /* Sponsor Logos */
@@ -211,13 +178,13 @@ body {
 
 .sponsor-logo {
   height: 100px;
-  filter: brightness(0.8); /* Dim logos for dark theme */
+  filter: brightness(0.8);
 }
 
 /* Footer Styles */
 .footer {
   background: var(--primary-color);
-  color: var(--text-color);
+  color: white;
   padding: 20px 0;
   text-align: center;
   border-top: 1px solid var(--secondary-color);
@@ -230,5 +197,5 @@ body {
 
 .footer-text {
   font-size: 0.9rem;
-  color: var(--text-color);
+  color: white;
 }
