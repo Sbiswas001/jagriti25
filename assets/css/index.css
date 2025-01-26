@@ -1,4 +1,9 @@
 /* Navbar styles */
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   background: #333;
   color: #fff;
