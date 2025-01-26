@@ -4,68 +4,218 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jagriti 2025</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      rel="icon"
+      href="/assets/images/logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>Welcome to Jagriti 2025</h1>
-        <p>March 1-2, 2025 | Starting from 12 PM</p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="teams.html">Meet Our Teams</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <!-- Navbar Section -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="/assets/images/logos/logo.png"
+            alt="Jagriti Logo"
+        /></a>
+
+        <nav class="nav-links">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Meet Our Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="intro">
-        <div class="container">
-          <h2>About Jagriti</h2>
-          <p>
-            JAGRITI is the flagship cultural event of GCECT, bringing together
-            students from across the nation for two days of cultural and social
-            festivities.
+    <!-- Carousel Section -->
+    <div class="carousel">
+      <div class="carousel-slide">
+        <div
+          class="carousel-item"
+          style="background-image: url('/assets/images/jagriti1.jpg')"
+        >
+          <h2 class="carousel-title">Welcome to Jagriti 2025</h2>
+          <p class="carousel-text">
+            Join the largest cultural fest in Kolkata!
           </p>
-          <a href="about.html" class="btn">Learn More</a>
+          <a class="btn-primary" href="about.html">Learn More</a>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('/assets/images/jagriti2.jpg')"
+        >
+          <h2 class="carousel-title">Exciting Events Await</h2>
+          <p class="carousel-text">Music, dance, and more await you.</p>
+          <a class="btn-primary" href="events.html">Explore Events</a>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('/assets/images/jagriti3.jpg')"
+        >
+          <h2 class="carousel-title">Be a Part of Something Bigger</h2>
+          <p class="carousel-text">
+            Get involved with social and cultural initiatives.
+          </p>
+          <a class="btn-primary" href="contact.html">Get Involved</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Vision Section -->
+      <section class="section vision">
+        <div class="section-content">
+          <h2 class="section-title">Vision</h2>
+          <p class="section-text">
+            JAGRITI, our flagship cultural event, formerly known as Cera-fest,
+            is permanently implemented as a way to foster the bonding amongst
+            people from different regions of the country.
+          </p>
+          <a class="btn-secondary" href="/pages/about.html">Learn More</a>
         </div>
       </section>
 
-      <section class="highlights">
-        <div class="container">
-          <h2>Event Highlights</h2>
-          <div class="highlight-cards">
-            <div class="card">
-              <h3>Music Performances</h3>
-              <p>Catch Rupankar, Anjan Dutta, Somlata, Zephyrtone, and more!</p>
-            </div>
-            <div class="card">
-              <h3>Social Initiatives</h3>
-              <p>
-                Join us for blood donation camps, eye-testing campaigns, and
-                other impactful events.
+      <!-- Aim Section -->
+      <section class="section aim">
+        <div class="section-content">
+          <h2 class="section-title">Aim</h2>
+          <p class="section-text">
+            Jagriti's main aim is to forget the monotonous routine of everyday
+            life for a few moments, to dive deep into having a chance to relax
+            and becoming alive. Let us celebrate this event with full vim and
+            vigor.
+          </p>
+          <a class="btn-secondary" href="/pages/about.html">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Schedule Section -->
+      <section class="section schedule">
+        <div class="section-content">
+          <h2 class="section-title">Schedule of Events</h2>
+          <a class="btn-secondary" href="/pages/schedule.html"
+            >Check Schedule</a
+          >
+        </div>
+      </section>
+
+      <!-- Event Highlights Section -->
+      <section class="section highlights">
+        <div class="section-content">
+          <h2 class="section-title">Event Highlights</h2>
+          <div class="highlight-grid">
+            <div class="highlight-item">
+              <h3 class="highlight-title">AAKRITI Fashion Show</h3>
+              <p class="highlight-text">
+                Unleash your creativity at the Aakriti Fashion Show!
+                Inter-college teams, showcase your unique designs and talents.
+                Registration now open.
               </p>
+              <a class="btn-secondary" href="/pages/events.html"
+                >Check Details</a
+              >
             </div>
-            <div class="card">
-              <h3>Tech Talks</h3>
-              <p>Engage in discussions on entrepreneurship and innovation.</p>
+            <div class="highlight-item">
+              <h3 class="highlight-title">ANUKRIT Dance Competition</h3>
+              <p class="highlight-text">
+                Show off your moves at the Anukriti Dance Competition! Solo,
+                duet, and group categories available. Register your team today.
+              </p>
+              <a class="btn-secondary" href="/pages/events.html"
+                >Check Details</a
+              >
+            </div>
+            <div class="highlight-item">
+              <h3 class="highlight-title">
+                MUSICON Battle of Bands Competition
+              </h3>
+              <p class="highlight-text">
+                Get ready to rock at the Musicon Battle of Bands! Inter-college
+                bands, showcase your musical talent. Register your team today.
+              </p>
+              <a class="btn-secondary" href="/pages/events.html"
+                >Check Details</a
+              >
+            </div>
+            <div class="highlight-item">
+              <h3 class="highlight-title">
+                SURAKRITI Solo Singing Competition
+              </h3>
+              <p class="highlight-text">
+                Showcase your vocal talent at the Surakriti Solo Singing
+                Competition! Inter-college singers, register now.
+              </p>
+              <a class="btn-secondary" href="/pages/events.html"
+                >Check Details</a
+              >
+            </div>
+            <div class="highlight-item">
+              <h3 class="highlight-title">STAND UP Comedy Show</h3>
+              <p class="highlight-text">
+                Laugh your way to therapy at our stand-up comedy show! Join us
+                for an evening of side-splitting humor.
+              </p>
+              <a class="btn-secondary" href="/pages/events.html"
+                >Check Details</a
+              >
+            </div>
+            <div class="highlight-item">
+              <h3 class="highlight-title">
+                GCECT TALENTS Student's Performance
+              </h3>
+              <p class="highlight-text">
+                Need a break from the books? Catch GCECT Talents for a night of
+                relatable comedy and college camaraderie.
+              </p>
+              <a class="btn-secondary" href="/pages/events.html"
+                >Check Details</a
+              >
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 JAGRITI | GCECT, Kolkata</p>
+    <!-- Sponsors Section -->
+    <section class="section sponsors">
+      <div class="section-content">
+        <h2 class="section-title">Meet Our Sponsors</h2>
+        <div class="sponsor-logos">
+          <img class="sponsor-logo" src="" alt="Sponsor Logo 1" />
+          <img class="sponsor-logo" src="" alt="Sponsor Logo 2" />
+          <img class="sponsor-logo" src="" alt="Sponsor Logo 3" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <img
+          class="footer-logo"
+          src="/assets/images/logos/logo.png"
+          alt="Jagriti Logo"
+        />
+        <p class="footer-text">&copy; 2025 JAGRITI | GCECT, Kolkata</p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>
