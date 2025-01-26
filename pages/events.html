@@ -1,46 +1,101 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events - Jagriti 2025</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="teams.html">Meet Our Teams</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <main>
-      <section class="events">
-        <div class="container">
-          <h1>Events at Jagriti</h1>
-          <ul>
-            <li>AAKRITI Fashion Show</li>
-            <li>ANUKRITI</li>
-            <li>MUSICON</li>
-            <li>SURAKRITI</li>
-            <li>Stand-Up Comedy Show</li>
-            <li>GCECT Talents</li>
-          </ul>
-          <p>Register now to participate in these thrilling events!</p>
-        </div>
-      </section>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - Jagriti 2025</title>
+  <link rel="stylesheet" href="/assets/css/events.css" />
+</head>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 JAGRITI | GCECT, Kolkata</p>
-      </div>
-    </footer>
-  </body>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="teams.html">Meet Our Teams</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="event closed" onclick="toggleEvent(this)">
+    <div class="event-header">Surakriti</div>
+    <div class="event-content">
+      Surakriti invites collegiate singing enthusiasts to showcase their talent in an electrifying solo singing competition. Open to all college students, this event is a perfect platform to mesmerize the audience with your voice and creativity.
+
+Participants are given a total time of 6 minutes, including a 1-minute sound check. Any performance exceeding the limit will result in a deduction of marks, so timing is crucial. The stage will be equipped with adequate microphones and plug-ins, but participants are required to bring their own instruments.
+
+This is more than just a contest—it’s an opportunity to express your musical flair and connect with fellow music lovers. Rules and regulations may be updated at the discretion of the organizers to ensure a seamless event.
+
+Join us for Surakriti and let your voice resonate on a grand stage. Your journey to becoming the next solo sensation starts here. Don’t miss this opportunity to shine!
+      <br>
+      <a href="/pages/eventpages/surakriti.html" class="view-details">View Details</a>
+    </div>
+  </div>
+
+  <div class="event closed" onclick="toggleEvent(this)">
+    <div class="event-header">Lasya</div>
+    <div class="event-content">
+      A celebration of classical dance forms that showcases elegance, grace, and rhythm. Witness mesmerizing
+      performances that highlight the rich heritage of our cultural traditions.
+      <br>
+      <a href="#" class="view-details">View Details</a>
+    </div>
+  </div>
+
+  <div class="event closed" onclick="toggleEvent(this)">
+    <div class="event-header">Dianoia</div>
+    <div class="event-content">
+      Dianoia is a platform for intellectual discussions, debates, and creative problem-solving. A must-attend for those
+      who enjoy diving deep into thought-provoking topics.
+      <br>
+      <a href="#" class="view-details">View Details</a>
+    </div>
+  </div>
+
+  <div class="event closed" onclick="toggleEvent(this)">
+    <div class="event-header">Proscenium and Footprints</div>
+    <div class="event-content">
+      Immerse yourself in a world of theatrical brilliance with Proscenium, paired with artistic footwork in Footprints.
+      An event for drama and dance enthusiasts.
+      <br>
+      <a href="#" class="view-details">View Details</a>
+    </div>
+  </div>
+
+  <div class="event closed" onclick="toggleEvent(this)">
+    <div class="event-header">Cooking without Fire</div>
+    <div class="event-content">
+      Discover the art of creating delightful dishes without the use of fire. A fun and innovative culinary experience
+      awaits you!
+      <br>
+      <a href="#" class="view-details">View Details</a>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JAGRITI | GCECT, Kolkata</p>
+    </div>
+  </footer>
+</body>
+<script>
+  function toggleEvent(eventElement) {
+      if (eventElement.classList.contains('open')) {
+          eventElement.classList.remove('open');
+          eventElement.classList.add('closed');
+      } else {
+          document.querySelectorAll('.event.open').forEach(el => {
+              el.classList.remove('open');
+              el.classList.add('closed');
+          });
+          eventElement.classList.remove('closed');
+          eventElement.classList.add('open');
+      }
+  }
+</script>
 </html>
