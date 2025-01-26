@@ -1,13 +1,33 @@
-/* Navbar styles */
-*{
+/* Global Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #1a1a2e; /* Dark background */
+  --secondary-color: #8a2be2; /* Violet accent */
+  --text-color: #e0e0e0; /* Light gray for text */
+  --font-size: 16px;
+  --spacing: 15px;
+  --highlight-bg: #252540; /* Slightly lighter dark for cards */
+  --shadow-color: rgba(0, 0, 0, 0.4); /* Subtle shadows */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background: var(--primary-color);
+}
+
+/* Navbar Styles */
 .navbar {
-  background: #333;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color);
   padding: 10px 20px;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .navbar-container {
@@ -18,35 +38,60 @@
 
 .logo {
   height: 50px;
+  cursor: pointer;
 }
 
-.nav-links .nav-list {
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-item {
-  margin: 0 15px;
+  margin: 0 var(--spacing);
 }
 
 .nav-link {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #007bff;
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-color);
+  outline: none;
 }
 
-/* Carousel styles */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: var(--spacing) 0;
+  }
+}
+
+/* Carousel Styles */
 .carousel {
   position: relative;
   width: 100%;
   height: 300px;
   overflow: hidden;
+  background: var(--highlight-bg);
 }
 
 .carousel-slide {
@@ -60,7 +105,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -68,7 +113,7 @@
   margin: 0;
   padding-top: 100px;
   font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px var(--shadow-color);
 }
 
 .carousel-text {
@@ -78,8 +123,8 @@
 
 .btn-primary {
   padding: 10px 20px;
-  background: #007bff;
-  color: #fff;
+  background: var(--secondary-color);
+  color: var(--text-color);
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -88,13 +133,14 @@
 }
 
 .btn-primary:hover {
-  background: #0056b3;
+  background: #6f22b8; /* Slightly darker violet */
 }
 
-/* Section styles */
+/* Section Styles */
 .section {
   padding: 50px 20px;
-  background: #f9f9f9;
+  background: var(--primary-color);
+  color: var(--text-color);
 }
 
 .section-content {
@@ -106,6 +152,7 @@
 .section-title {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: var(--secondary-color);
 }
 
 .section-text {
@@ -115,8 +162,8 @@
 
 .btn-secondary {
   padding: 10px 20px;
-  background: #6c757d;
-  color: #fff;
+  background: #6c44a0; /* Darker violet */
+  color: var(--text-color);
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -124,10 +171,10 @@
 }
 
 .btn-secondary:hover {
-  background: #5a6268;
+  background: #59388a;
 }
 
-/* Highlights grid */
+/* Highlights Grid */
 .highlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -135,24 +182,26 @@
 }
 
 .highlight-item {
-  background: #fff;
+  background: var(--highlight-bg);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-color);
   text-align: left;
 }
 
 .highlight-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: var(--secondary-color);
 }
 
 .highlight-text {
   font-size: 1rem;
   margin-bottom: 20px;
+  color: var(--text-color);
 }
 
-/* Sponsor logos */
+/* Sponsor Logos */
 .sponsor-logos {
   display: flex;
   justify-content: center;
@@ -162,14 +211,16 @@
 
 .sponsor-logo {
   height: 100px;
+  filter: brightness(0.8); /* Dim logos for dark theme */
 }
 
-/* Footer styles */
+/* Footer Styles */
 .footer {
-  background: #333;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color);
   padding: 20px 0;
   text-align: center;
+  border-top: 1px solid var(--secondary-color);
 }
 
 .footer-logo {
@@ -179,4 +230,5 @@
 
 .footer-text {
   font-size: 0.9rem;
+  color: var(--text-color);
 }
