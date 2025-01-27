@@ -169,41 +169,40 @@ body {
         gap: 10px;
     }
     .card-container {
-      grid-template-columns: 1fr; /* Single-column layout for tablets and phones */
+      grid-template-columns: 1fr;
     }
   
     .card {
-      padding: 1.5rem; /* Reduce padding */
-      margin: 0 auto; /* Center-align cards */
-      width: 90%; /* Add some breathing room on smaller screens */
+      padding: 1.5rem; 
+      margin: 0 auto; 
+      width: 90%; 
     }
   
     .card h3 {
-      font-size: 1.3rem; /* Slightly smaller headline */
+      font-size: 1.3rem; 
     }
   
     .card p {
-      font-size: 0.9rem; /* Adjust paragraph font size */
+      font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-  /* Adjust card layout for phones */
   .card {
-    padding: 1rem; /* Reduce padding */
+    padding: 1rem; 
   }
 
   .card h3 {
-    font-size: 1.1rem; /* Further reduce headline size */
+    font-size: 1.1rem; 
   }
 
   .card p {
-    font-size: 0.85rem; /* Further reduce text size */
-    line-height: 1.4; /* Adjust line height */
+    font-size: 0.85rem; 
+    line-height: 1.4; 
   }
 
   .card:hover {
-    transform: none; /* Disable hover effect for touchscreens */
+    transform: none; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 }
