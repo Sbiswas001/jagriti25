@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -149,9 +149,6 @@ body {
   .event-details {
     animation: rotateBackground 20s infinite;
   }
-  
-
-
 
 /* Mobile view */
 @media (max-width: 768px) {
@@ -171,4 +168,42 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+    .card-container {
+      grid-template-columns: 1fr; /* Single-column layout for tablets and phones */
+    }
+  
+    .card {
+      padding: 1.5rem; /* Reduce padding */
+      margin: 0 auto; /* Center-align cards */
+      width: 90%; /* Add some breathing room on smaller screens */
+    }
+  
+    .card h3 {
+      font-size: 1.3rem; /* Slightly smaller headline */
+    }
+  
+    .card p {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+  /* Adjust card layout for phones */
+  .card {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .card h3 {
+    font-size: 1.1rem; /* Further reduce headline size */
+  }
+
+  .card p {
+    font-size: 0.85rem; /* Further reduce text size */
+    line-height: 1.4; /* Adjust line height */
+  }
+
+  .card:hover {
+    transform: none; /* Disable hover effect for touchscreens */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
 }
