@@ -265,6 +265,10 @@ body {
   margin-bottom: 10px; /* Adds space between logo and text */
 }
 
+.tagline {
+  font-size: 2em;
+  text-align: center;
+}
 
 /* Footer Styles */
 .footer { 
@@ -273,6 +277,7 @@ body {
   padding: 20px 0;
   text-align: center;
   border-top: 1px solid var(--secondary-color);
+  margin-top: 20px;
 }
 
 .footer-logo {
