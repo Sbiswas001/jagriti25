@@ -1,3 +1,12 @@
+// JavaScript to hide loader and show content once the page is fully loaded
+window.onload = function() {
+  setTimeout(function() {
+    document.getElementById('loader').style.display = 'none'; // Hide the loader
+    document.getElementById('content').style.display = 'block'; // Show the content
+  }, 1000); // You can adjust the time (in ms) for how long you want the loader to appear
+};
+
+
 document.addEventListener("DOMContentLoaded", function() {
 
   // Carousel Logic
