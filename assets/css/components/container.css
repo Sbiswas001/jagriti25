@@ -1,8 +1,9 @@
 .event-container {
     width: 100%;
     margin: 0 auto;
+    
     padding: 0px;
-    background-color: #59388a;
+    
     color: white;
     box-sizing: border-box;
     transition: background-color 0.3s ease;
@@ -15,21 +16,26 @@
 }
 
 .event-container:hover {
-    background-color: rgba(113, 13, 129, 0.6);
+    background-image: -moz-linear-gradient(45deg, #ff7e5f, #feb47b); /* Firefox */
+    background-image: -webkit-linear-gradient(45deg, #ff7e5f, #feb47b); /* Safari */
+    background-image: linear-gradient(45deg, #ff7e5f, #feb47b); /* Standard syntax */
 }
 
+
 .event-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     color: #ffffff;
     text-align: center;
     padding-top: 25%;
-    transition: padding-top 1s ease;
+    transition: padding-top 1s ease, font-size 0.3s ease; /* Add transition for font-size */
 }
 
 .event-container:hover .event-title {
     padding-top: 5%; /* Hover effect on the title */
+    font-size: 1.5rem; /* New font size on hover */
 }
+
 
 .event-description {
     font-size: 1rem;
@@ -44,6 +50,7 @@
     background-repeat: no-repeat;
     height: 200px;
     border-radius: 10px;
+    position: relative;
     transition: transform 1s ease, box-shadow 1s ease;
 }
 
@@ -51,6 +58,30 @@
     transform: scale(1.05); /* Slight zoom effect on hover */
     box-shadow: 0 8px 12px var(--shadow-color); /* Enhanced shadow on hover */
 }
+
+.event-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+    transition: background-color 0.3s ease;
+    border-radius: 10px; /* Match the event item border radius */
+    z-index: 1; /* Ensure the tint is on top of the image but behind the text */
+}
+
+.event-container:hover .event-item::before {
+    background-color: rgba(0, 0, 0, 0.4); /* Add a tint on hover, black with 40% opacity */
+}
+
+.event-item h3, .event-item p,
+.event-item a {
+    position: relative;
+    z-index: 2; /* Ensure the text remains above the tint */
+}
+
 
 .event-btn {
     position: absolute;

@@ -11,37 +11,46 @@
     />
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/components/container.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@dotlottie/player@latest"></script>
+
+    <script src="/assets/js/index.js"></script>
   </head>
   <body>
+    <div id="loadingAnimation"></div>
+
     <!-- Navbar Section -->
     <header class="navbar">
       <div class="navbar-container">
-        <a href="index.html" class="navbar-logo-link">
-          <img
+        <a href="index.html"
+          ><img
             class="logo"
             src="/assets/images/logos/logo.png"
             alt="Jagriti Logo"
-          />
-        </a>
-        <nav class="navbar-nav">
-          <ul class="navbar-links">
-            <li class="navbar-item">
-              <a class="navbar-link" href="index.html">Home</a>
+        /></a>
+
+        <nav>
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="schedule.html">Schedule</a>
+            <li>
+              <a href="schedule.html">Schedule</a>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="events.html">Events</a>
+            <li>
+              <a href="events.html">Events</a>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="teams.html">Members</a>
+            <li>
+              <a href="teams.html">Members</a>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="contact.html">Contacts</a>
+            <li>
+              <a href="about.html">About</a>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="about.html">About Us</a>
+            <li>
+              <a href="contact.html">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -84,6 +93,10 @@
           >
         </div>
       </div>
+
+      <!-- Navigation Buttons -->
+      <button class="prev">Prev</button>
+      <button class="next">Next</button>
     </div>
 
     <main>
@@ -149,70 +162,82 @@
           <div class="highlight-grid">
             <div class="event-container">
               <div class="event-item aakriti">
-                <h3 class="event-title">AAKRITI Fashion Show</h3>
+                <h3 class="event-title">AAKRITI</h3>
                 <p class="event-description">
                   Unleash your creativity at the Aakriti Fashion Show!
                   Inter-college teams, showcase your unique designs and talents.
                   Registration now open.
                 </p>
-                <a class="event-btn" href="/pages/events.html">Check Details</a>
+                <a class="event-btn" href="/pages/eventpages/akriti.html"
+                  >Check Details</a
+                >
               </div>
             </div>
 
             <div class="event-container">
               <div class="event-item anukriti">
-                <h3 class="event-title">ANUKRITI Dance Competition</h3>
+                <h3 class="event-title">ANUKRITI</h3>
                 <p class="event-description">
                   Show off your moves at the Anukriti Dance Competition! Solo,
                   duet, and group categories available. Register your team
                   today.
                 </p>
-                <a class="event-btn" href="/pages/events.html">Check Details</a>
+                <a class="event-btn" href="/pages/eventpages/anukriti.html"
+                  >Check Details</a
+                >
               </div>
             </div>
 
             <div class="event-container">
               <div class="event-item musicon">
-                <h3 class="event-title">MUSICON Battle of Bands Competition</h3>
+                <h3 class="event-title">MUSICON</h3>
                 <p class="event-description">
                   Get ready to rock at the Musicon Battle of Bands!
                   Inter-college bands, showcase your musical talent. Register
                   your team today.
                 </p>
-                <a class="event-btn" href="/pages/events.html">Check Details</a>
+                <a class="event-btn" href="/pages/eventpages/musicon.html"
+                  >Check Details</a
+                >
               </div>
             </div>
 
             <div class="event-container">
               <div class="event-item surakriti">
-                <h3 class="event-title">SURAKRITI Solo Singing Competition</h3>
+                <h3 class="event-title">SURAKRITI</h3>
                 <p class="event-description">
                   Showcase your vocal talent at the Surakriti Solo Singing
                   Competition! Inter-college singers, register now.
                 </p>
-                <a class="event-btn" href="/pages/events.html">Check Details</a>
+                <a class="event-btn" href="/pages/eventpages/surakriti.html"
+                  >Check Details</a
+                >
               </div>
             </div>
 
             <div class="event-container">
               <div class="event-item comedy">
-                <h3 class="event-title">STAND UP Comedy Show</h3>
+                <h3 class="event-title">STAND UP COMEDY</h3>
                 <p class="event-description">
                   Laugh your way to therapy at our stand-up comedy show! Join us
                   for an evening of side-splitting humor.
                 </p>
-                <a class="event-btn" href="/pages/events.html">Check Details</a>
+                <a class="event-btn" href="/pages/eventpages/Standup.html"
+                  >Check Details</a
+                >
               </div>
             </div>
 
             <div class="event-container">
               <div class="event-item studentsTalent">
-                <h3 class="event-title">GCECT TALENTS Student's Performance</h3>
+                <h3 class="event-title">GCECT TALENTS</h3>
                 <p class="event-description">
                   Need a break from the books? Catch GCECT Talents for a night
                   of relatable comedy and college camaraderie.
                 </p>
-                <a class="event-btn" href="/pages/events.html">Check Details</a>
+                <a class="event-btn" href="/pages/eventpages/talents.html"
+                  >Check Details</a
+                >
               </div>
             </div>
           </div>
@@ -278,7 +303,5 @@
         <p class="footer-text">&copy; 2025 JAGRITI | GCECT, Kolkata</p>
       </div>
     </footer>
-
-    <script src="/assets/js/index.js"></script>
   </body>
 </html>
