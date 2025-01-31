@@ -22,7 +22,6 @@
 body {
     background-color: var(--bg-dark); /* Unified background color */
     color: var(--text-color);
-    padding: 20px;
 }
 
 /* Heading */
@@ -157,6 +156,10 @@ nav {
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     cursor: pointer;
+}
+
+.event-container {
+  padding: 30px; 
 }
 
 .event.closed {
