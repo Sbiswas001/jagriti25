@@ -20,15 +20,6 @@ body {
   --highlight-bg: #6f22b8; /* Example highlight background color */
   --shadow-color: rgba(0, 0, 0, 0.4);
 }
-#loadingAnimation {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
 
 /* Navbar Section */
 nav {

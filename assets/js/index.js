@@ -1,14 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const player = document.querySelector('#loadingAnimation');
-  const lottiePlayer = new dotLottie.Player(player);
-  lottiePlayer.load('../loading.json'); // Replace with your actual .json file path
-  lottiePlayer.play();
-
-  // Run the animation for 1 second, even if the page is loaded
-  setTimeout(function() {
-    lottiePlayer.stop(); // Stop the animation
-    document.getElementById('loadingAnimation').style.display = 'none'; // Hide the animation
-  }, 1000); // 1000 milliseconds = 1 second
 
   // Carousel Logic
   const carouselSlide = document.querySelector(".carousel-slide");
