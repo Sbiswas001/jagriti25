@@ -107,17 +107,15 @@ ul a:hover {
 }
 
 .vision {
-  width: 40%;
+  width: 50%;
   padding-bottom: 35px;
   text-align: left;
 }
 
 .aim {
-  width: 40%;
   align-items: end;
   text-align: right;
-  margin-left: 0 !important;
-  padding-left: 20px !important;
+  margin-left: 50% !important;
 }
 
 .container {
