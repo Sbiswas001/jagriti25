@@ -8,7 +8,7 @@
 /* Body and Font */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #1c1943;
     color: #333;
 }
 
@@ -215,6 +215,10 @@ main {
     color: #ff8c00; /* Change hover color to orange */
 }
 
+.social-media-info img {
+  height: 50px;
+}
+
 .location-info iframe {
     width: 100%;
     border-radius: 8px;
@@ -222,15 +226,23 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: #3a4d66;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.footer { 
+  background: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid var(--secondary-color);
+  margin-top: 20px;
 }
 
-footer p {
-    font-size: 16px;
+.footer-logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: white;
 }
 
 /* Responsive Design */
