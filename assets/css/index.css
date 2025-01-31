@@ -150,6 +150,74 @@ body {
   background: #59388a;
 }
 
+.vision .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 20px;
+}
+
+.vision .section-content div {
+  flex: 1; /* Allows text content to take equal space */
+}
+
+.vision .sponsor-logo {
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto; /* Pushes image to the right */
+}
+
+.vision .section-title {
+  text-align: left;
+}
+
+.vision .vision-btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+
+
+.aim .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 20px;
+}
+
+.aim .aim-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.aim .sponsor-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.aim .aim-text {
+  flex: 1;
+}
+
+.aim .section-title {
+  text-align: left;
+}
+
+.aim .aim-btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
 /* Highlights Grid */
 .highlight-grid {
   display: grid;
