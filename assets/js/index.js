@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const player = document.querySelector('#loadingAnimation');
   const lottiePlayer = new dotLottie.Player(player);
-  lottiePlayer.load('../assets/loading.json'); // Replace with your actual .json file path
+  lottiePlayer.load('../loading.json'); // Replace with your actual .json file path
   lottiePlayer.play();
 
   // Run the animation for 1 second, even if the page is loaded
