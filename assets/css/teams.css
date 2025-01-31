@@ -139,6 +139,7 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: #ffffff;
+    margin: 1em;
   }
   .card .img-container {
     width: 8em;
