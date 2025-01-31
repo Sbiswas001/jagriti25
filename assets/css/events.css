@@ -1,20 +1,82 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+/* Define CSS Variables */
+:root {
+    --primary-color: #1c1943;
+    --secondary-color: #6f22b8;
+    --highlight-bg: #6f22b8;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --text-color: white;
+    --bg-light: #f9f9f9;
+    --bg-dark: #1c1943;
 }
 
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
 body {
-    background-color: #f9f9f9;
+    background-color: var(--bg-dark); /* Unified background color */
+    color: var(--text-color);
     padding: 20px;
 }
 
+/* Heading */
+.heading {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Navbar Section */
+.navbar {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar-nav .navbar-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-link:hover {
+    color: #007bff;
+}
+
+/* Event Section */
 .event {
     background: #fff;
+    color: black; /* Ensure text is readable */
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--shadow-color);
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     cursor: pointer;
@@ -46,6 +108,7 @@ body {
     display: block;
 }
 
+/* View Details Button */
 .view-details {
     display: inline-block;
     margin-top: 20px;
@@ -63,8 +126,9 @@ body {
     background-color: #d32f2f;
 }
 
-@media (max-width: 768px){
-    .event.open{
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .event.open {
         max-height: 600px;
     }
 }
