@@ -101,6 +101,7 @@ ul a:hover {
 
 /* Main Section */
 .about-intro {
+  padding-top: 50px;
   padding-bottom: 35px;
   text-align: center;
 }
@@ -138,6 +139,7 @@ main {
   position: relative;
   height: 100vh;
   background-image: url("../images/about_bg.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -155,7 +157,7 @@ main ::before {
 
 /* Footer Section */
 .footer {
-  background: var(#1c1943);
+  background: #1c1943;
   color: #1c1943;
   padding: 20px 0;
   text-align: center;
