@@ -9,48 +9,21 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/css/contact.css" />
+    <link rel="stylesheet" href="/assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/assets/js/loadNavbar.js"></script>
+    <script src="/assets/js/loadFooter.js"></script>
   </head>
   <body>
     <!-- Navbar Section -->
-    <header class="navbar">
-      <div class="navbar-container">
-        <a href="index.html"
-          ><img
-            class="logo"
-            src="/assets/images/logos/logo.png"
-            alt="Jagriti Logo"
-        /></a>
-
-        <nav>
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="schedule.html">Schedule</a>
-            </li>
-            <li>
-              <a href="events.html">Events</a>
-            </li>
-            <li>
-              <a href="teams.html">Members</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div id="navbar-placeholder"></div>
 
     <main>
+      <!-- Contact Information Section -->
       <section class="contact">
         <div class="container">
           <div class="contact-info">
@@ -68,9 +41,7 @@
                 <ul>
                   <li>E-mail</li>
                   <li>
-                    <a href="mailto:jagriti@gcect.ac.in"
-                      >jagriti@gcect.ac.in</a
-                    >
+                    <a href="mailto:jagriti@gcect.ac.in">jagriti@gcect.ac.in</a>
                   </li>
                 </ul>
               </div>
@@ -82,6 +53,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Social Media Section -->
           <section class="social-media-info">
             <h1>Stay Connected</h1>
             <p>Follow us on our social media</p>
@@ -117,6 +90,7 @@
             </div>
           </section>
 
+          <!-- Location Map Section -->
           <div class="location-info">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.3858236039755!2d88.3924567!3d22.5646687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02767d397506af%3A0x2b352e7f5c0bdb12!2sGovernment%20College%20of%20Engineering%20And%20Ceramic%20Technology!5e0!3m2!1sen!2sin!4v1737873795887!5m2!1sen!2sin"
@@ -132,15 +106,7 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <img
-          class="footer-logo"
-          src="/assets/images/logos/logo.png"
-          alt="Jagriti Logo"
-        />
-        <p class="footer-text">&copy; 2025 JAGRITI | GCECT, Kolkata</p>
-      </div>
-    </footer>
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
   </body>
 </html>

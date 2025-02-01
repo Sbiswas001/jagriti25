@@ -10,50 +10,21 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/css/schedule.css" />
-    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="/assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/assets/js/loadNavbar.js"></script>
+    <script src="/assets/js/loadFooter.js"></script>
   </head>
   <body>
     <!-- Navbar Section -->
-    <header class="navbar">
-      <div class="navbar-container">
-        <a href="index.html"
-          ><img
-            class="logo"
-            src="/assets/images/logos/logo.png"
-            alt="Jagriti Logo"
-        /></a>
+    <div id="navbar-placeholder"></div>
 
-        <nav>
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="schedule.html">Schedule</a>
-            </li>
-            <li>
-              <a href="events.html">Events</a>
-            </li>
-            <li>
-              <a href="teams.html">Members</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
+    <!-- Event Schedule Section -->
     <h2 class="heading">Event Schedule</h2>
-
     <table>
       <thead>
         <tr>
@@ -119,7 +90,7 @@
           <td>Ground</td>
         </tr>
         <tr>
-          <td>Dance </td>
+          <td>Dance</td>
           <td>Mar 2, 2025</td>
           <td>6:00 PM</td>
           <td>Ground</td>
@@ -138,15 +109,8 @@
         </tr>
       </tbody>
     </table>
-    <footer class="footer">
-      <div class="footer-container">
-        <img
-          class="footer-logo"
-          src="/assets/images/logos/logo.png"
-          alt="Jagriti Logo"
-        />
-        <p class="footer-text">&copy; 2025 JAGRITI | GCECT, Kolkata</p>
-      </div>
-    </footer>
+
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
   </body>
 </html>

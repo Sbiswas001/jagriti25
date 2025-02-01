@@ -3,102 +3,6 @@
   padding: 0;
 }
 
-/* Navbar Section */
-nav {
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #1c1943;
-  padding: 1em;
-}
-
-nav a {
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-
-#logo {
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-label {
-  display: none;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-}
-
-ul a {
-  padding: 0.5em;
-}
-
-ul a:hover {
-  background-color: #333333;
-  border-radius: 0.5em;
-}
-
-.active {
-  border-bottom: 2px solid #ffffff;
-}
-
-@media screen and (max-width: 600px) {
-  label {
-    display: block;
-  }
-
-  ul {
-    font-size: 1.2em;
-    position: absolute;
-    left: -100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333333;
-    gap: 2em;
-    top: 60px;
-    width: 100%;
-    height: calc(100vh - 60px);
-    transition: 0.5s;
-  }
-
-  input[type="checkbox"]:checked ~ ul {
-    left: 0;
-  }
-
-  ul a:hover {
-    background-color: #2c8eec;
-  }
-}
-
-/* Navbar Container */
-.navbar {
-  background: #1c1943;
-  color: #fff;
-  padding: 10px 20px;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  height: 50px;
-}
-
 /* Main Section */
 
 /* Heading */
@@ -188,23 +92,6 @@ main::before {
   z-index: -1; /* Places the overlay between the background and content */
 }
 
-
-/* Footer Section */
-.footer {
-  background: #1c1943;
-  color: #1c1943;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 1px solid var(#6f22b8);
-  margin-top: 20px;
-}
-
-.footer-logo {
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.footer-text {
-  font-size: 0.9rem;
-  color: white;
+body {
+  background-color: #1c1943;
 }

@@ -10,47 +10,19 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/css/eventpages/musicon.css" />
+    <link rel="stylesheet" href="/assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/assets/js/loadNavbar.js"></script>
+    <script src="/assets/js/loadFooter.js"></script>
   </head>
 
   <body>
     <!-- Navbar Section -->
-    <header class="navbar">
-      <div class="navbar-container">
-        <a href="index.html"
-          ><img
-            class="logo"
-            src="/assets/images/logos/logo.png"
-            alt="Jagriti Logo"
-        /></a>
-
-        <nav>
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="schedule.html">Schedule</a>
-            </li>
-            <li>
-              <a href="events.html">Events</a>
-            </li>
-            <li>
-              <a href="teams.html">Members</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div id="navbar-placeholder"></div>
     <div class="container">
       <div class="event-card">
         <div class="event-image">
@@ -127,5 +99,8 @@
         </div>
       </section>
     </div>
+
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
   </body>
 </html>

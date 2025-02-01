@@ -10,47 +10,21 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/css/eventpages/aakriti.css" />
+    <link rel="stylesheet" href="/assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/assets/js/loadNavbar.js"></script>
+    <script src="/assets/js/loadFooter.js"></script>
   </head>
 
   <body>
     <!-- Navbar Section -->
-    <header class="navbar">
-      <div class="navbar-container">
-        <a href="index.html"
-          ><img
-            class="logo"
-            src="/assets/images/logos/logo.png"
-            alt="Jagriti Logo"
-        /></a>
+    <div id="navbar-placeholder"></div>
 
-        <nav>
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="schedule.html">Schedule</a>
-            </li>
-            <li>
-              <a href="events.html">Events</a>
-            </li>
-            <li>
-              <a href="teams.html">Members</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- Event Details Section -->
     <div class="container">
       <div class="event-card">
         <div class="event-image">
@@ -62,7 +36,6 @@
         <div class="eventdetails">
           <h1>AAKRITI</h1>
           <h3>Fashion Show</h3>
-
           <p>
             Welcome to <strong>AAKRITI</strong>, an inter-college fashion show
             competition that brings creativity and style to the stage!
@@ -84,6 +57,7 @@
       </div>
     </div>
 
+    <!-- Event Rules and Guidelines Section -->
     <div class="container">
       <section class="event-details">
         <div class="card-container">
@@ -109,10 +83,13 @@
               <i class="icon-rules"></i>
             </div>
             <h3>Rules</h3>
-            <p>enough on stage time for each participants</p>
+            <p>Enough on-stage time for each participant.</p>
           </div>
         </div>
       </section>
     </div>
+
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
   </body>
 </html>

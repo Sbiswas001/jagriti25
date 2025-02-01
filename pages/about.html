@@ -9,38 +9,25 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/components/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/assets/js/loadNavbar.js"></script>
+    <script src="/assets/js/loadFooter.js"></script>
   </head>
 
   <body>
     <!-- Navbar Section -->
-    <header class="navbar">
-      <div class="navbar-container">
-        <a href="index.html" aria-label="Go to home page">
-          <img
-            class="logo"
-            src="/assets/images/logos/logo.png"
-            alt="Jagriti Logo"
-          />
-        </a>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="teams.html">Members</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
+    <div id="navbar-placeholder"></div>
     <main>
+      <!-- About Section -->
       <section class="about">
         <div class="container">
           <article class="about-intro">
-            <h1 class="heading">About GCECT and Jagriti</h2>
+            <h1 class="heading">About GCECT and Jagriti</h1>
             <p>
               Government College of Engineering and Ceramic Technology (GCECT),
               formerly known as College of Ceramic Technology (CCT), is a
@@ -51,7 +38,6 @@
               internship records abroad, as well as countless successful alumni
               of the college, spread globally.
             </p>
-
             <p>
               While academic excellence is intended to be unwavering at GCECT,
               we believe that the importance of literary, cultural and athletic
@@ -60,9 +46,8 @@
               held in the month of March. Following the huge success of previous
               JAGRITI editions, this year is sure to be worth taking your two
               doses of fun for, only to be enhanced by your enthusiastic
-              participation
+              participation.
             </p>
-
             <p>
               Starting with Rupankar's show, Anjan Dutta, Somlata, Zephyrtone,
               and a slew of other notable artists. To name a few, Jagriti has
@@ -78,6 +63,7 @@
             </p>
           </article>
 
+          <!-- Vision Section -->
           <section class="vision">
             <h2 class="subheading">VISION</h2>
             <p>
@@ -87,6 +73,7 @@
             </p>
           </section>
 
+          <!-- Aim Section -->
           <section class="aim">
             <h2 class="subheading">AIM</h2>
             <p>
@@ -100,15 +87,7 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <img
-          class="footer-logo"
-          src="/assets/images/logos/logo.png"
-          alt="Jagriti Logo"
-        />
-        <p class="footer-text">&copy; 2025 JAGRITI | GCECT, Kolkata</p>
-      </div>
-    </footer>
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
   </body>
 </html>

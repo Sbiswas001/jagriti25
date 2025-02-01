@@ -73,3 +73,20 @@ document.addEventListener("DOMContentLoaded", function () {
   nextButton.addEventListener("click", moveToNextSlide);
   prevButton.addEventListener("click", moveToPreviousSlide);
 });
+
+
+    function toggleEvent(eventElement) {
+      if (eventElement.classList.contains("open")) {
+        eventElement.classList.remove("open");
+        eventElement.classList.add("closed");
+      } else {
+        document.querySelectorAll(".event.open").forEach((el) => {
+          el.classList.remove("open");
+          el.classList.add("closed");
+        });
+        eventElement.classList.remove("closed");
+        eventElement.classList.add("open");
+      }
+    }
+
+
