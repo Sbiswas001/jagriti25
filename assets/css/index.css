@@ -185,56 +185,139 @@ ul a:hover {
 }
 
 /* Carousel Section */
+/* Carousel Section */
 .carousel {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 100vh;
   overflow: hidden;
   background: var(--highlight-bg);
 }
 
 .carousel-slide {
   display: flex;
+  height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
   min-width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
   position: relative;
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Translucent Background Layer */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+/* Content Styling */
+.carousel-item > * {
+  position: relative;
+  z-index: 1;
 }
 
 .carousel-title {
   margin: 0;
-  padding-top: 100px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 4px var(--shadow-color);
 }
 
 .carousel-text {
-  font-size: 1rem;
-  margin: 10px 0;
+  font-size: 1.5rem;
+  margin: 15px 0;
 }
 
+/* Button Styles */
 .btn-primary {
-  padding: 10px 20px;
+  padding: 15px 35px;
   background: var(--secondary-color);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
   display: inline-block;
-  margin-top: 10px;
-  transition: background 0.3s ease;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary:hover {
-  background: #6f22b8;
+  background: #5b1c9c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease-in-out;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
 
 /* Section Styles */
 .section {
@@ -275,7 +358,27 @@ ul a:hover {
   background: #59388a;
 }
 
+.vision {
+  position: relative;
+  background-image: url(/assets/images/vision_background_image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vision::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust transparency (0 = fully transparent, 1 = fully opaque) */
+}
+
 .vision .section-content {
+  position: relative;
+  z-index: 1; /* Ensures the content appears above the overlay */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -284,6 +387,7 @@ ul a:hover {
   text-align: left;
   gap: 20px;
 }
+
 
 .vision .section-content div {
   flex: 1; /* Allows text content to take equal space */
@@ -308,8 +412,27 @@ ul a:hover {
 
 
 
+.aim {
+  position: relative;
+  background-image: url(/assets/images/aim_background_image.jpg); /* Add the correct background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+}
 
 .aim .section-content {
+  position: relative;
+  z-index: 1; /* Ensures the content appears above the overlay */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -342,6 +465,7 @@ ul a:hover {
   display: inline-block;
   margin-top: 10px;
 }
+
 
 /* Highlights Grid */
 .highlight-grid {
