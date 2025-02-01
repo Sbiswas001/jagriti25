@@ -17,7 +17,7 @@
 
 /* Subheading */
 .subheading {
-  text-align: center;
+  text-align: center; 
   color: #ffffff;
   font-size: 1.8em; /* Slightly smaller than the main heading */
   font-weight: 600; /* Slightly lighter than the heading */
@@ -26,22 +26,31 @@
   letter-spacing: 1px; /* Add letter spacing for a sleek look */
 }
 
-
 .about-intro {
   padding-top: 50px;
   padding-bottom: 35px;
-  text-align: center;
+  text-align: center; /* Container text alignment (center for headings, etc.) */
+}
+
+/* Apply justified text and side margins for paragraphs */
+.about-intro p,
+.vision p,
+.aim p {
+  text-align: justify;
+  margin: 0 .5rem; /* Adjust as needed for more or less spacing */
 }
 
 .vision {
   width: 50%;
   padding-bottom: 35px;
-  text-align: left;
+  /* Remove left text-align if you want justification:
+     text-align: left; */
 }
 
 .aim {
   align-items: end;
-  text-align: right;
+  /* Remove right text-align if you want justification:
+     text-align: right; */
   margin-left: 50% !important;
 }
 

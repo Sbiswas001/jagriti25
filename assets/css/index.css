@@ -377,10 +377,17 @@ body {
 
 /* Sponsor Logos */
 .sponsor-logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
   margin-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  justify-items: center;
 }
 
 .sponsor-item {
@@ -391,10 +398,60 @@ body {
 }
 
 .sponsor-logo {
-  height: 100px;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
   filter: brightness(0.8);
-  margin-bottom: 10px; /* Adds space between logo and text */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
+
+.sponsor-logo:hover {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+
+.sponsor-item h2 {
+  font-size: 1rem;
+  margin: 0;
+  color: #666;
+}
+
+@media (min-width: 1025px) {
+  .sponsor-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .sponsor-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 15px;
+  }
+  
+  .sponsor-logo {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsor-logos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .sponsor-logo {
+    max-width: 130px;
+  }
+
+  .sponsor-item h2 {
+    font-size: 0.9rem;
+  }
+}
+
 
 .tagline {
   font-size: 2em;

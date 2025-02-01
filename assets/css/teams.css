@@ -13,9 +13,11 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center-aligns the last row */
   padding: 2em 1em;
   text-align: center;
 }
+
 
 .column {
   width: 100%;

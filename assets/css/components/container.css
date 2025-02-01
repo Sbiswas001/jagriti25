@@ -32,16 +32,16 @@
 }
 
 .event-container:hover .event-title {
-    padding-top: 5%; /* Hover effect on the title */
-    font-size: 1.5rem; /* New font size on hover */
+    padding-top: 3%; /* Hover effect on the title */
+    font-size: 1.2rem; /* New font size on hover */
 }
 
 
 .event-description {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .event-item {
