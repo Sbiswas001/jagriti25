@@ -1,0 +1,149 @@
+.event-container {
+    width: 100%;
+    margin: 0 auto;
+    
+    padding: 0px;
+    
+    color: white;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    background: var(--highlight-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    text-align: left;
+    overflow: hidden; /* Ensure content does not overflow */
+    position: relative;
+}
+
+.event-container:hover {
+    background-image: -moz-linear-gradient(45deg, #ff7e5f, #feb47b); /* Firefox */
+    background-image: -webkit-linear-gradient(45deg, #ff7e5f, #feb47b); /* Safari */
+    background-image: linear-gradient(45deg, #ff7e5f, #feb47b); /* Standard syntax */
+}
+
+
+.event-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 25%;
+    transition: padding-top 1s ease, font-size 0.3s ease; /* Add transition for font-size */
+}
+
+.event-container:hover .event-title {
+    padding-top: 3%; /* Hover effect on the title */
+    font-size: 1.2rem; /* New font size on hover */
+}
+
+
+.event-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.event-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.event-container:hover .event-item {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 12px var(--shadow-color); /* Enhanced shadow on hover */
+}
+
+.event-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+    transition: background-color 0.3s ease;
+    border-radius: 10px; /* Match the event item border radius */
+    z-index: 1; /* Ensure the tint is on top of the image but behind the text */
+}
+
+.event-container:hover .event-item::before {
+    background-color: rgba(0, 0, 0, 0.4); /* Add a tint on hover, black with 40% opacity */
+}
+
+.event-item h3, .event-item p,
+.event-item a {
+    position: relative;
+    z-index: 2; /* Ensure the text remains above the tint */
+}
+
+
+.event-btn {
+    position: absolute;
+    bottom: -50px; /* Initially hidden below */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #59388a;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: bottom 0.4s ease-out, background-color 0.3s ease, transform 1s ease;
+    opacity: 0; /* Initially invisible */
+}
+
+.event-container:hover .event-btn {
+    bottom: 10px; /* Moves up */
+    opacity: 1; /* Becomes visible */
+    transform: translateX(-50%) scale(1.1);
+}
+
+
+.aakriti {
+    background-image: url(../../images/events/aakriti/akriti.png);
+}
+
+.anukriti {
+    background-image: url(../../images/events/anukriti/anukriti.jpg);
+}
+
+.comedy {
+    background-image: url(../../images/events/standup/standup.JPG);
+}
+
+.musicon {
+    background-image: url(../../images/events/musicon/musicon.png);
+}
+
+.studentsTalent {
+    background-image: url(../../images/events/talents/gcecttalents.png);
+}
+
+.surakriti {
+    background-image: url(../../images/events/surakriti/surakriti.png);
+}
+
+.event-item p {
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.event-item a {
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.event-container:hover .event-item p {
+    display: block;
+}
+
+.event-container:hover .event-item a {
+    display: inline-block;
+}
