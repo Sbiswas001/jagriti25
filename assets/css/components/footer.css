@@ -1,0 +1,19 @@
+/* Footer Section */
+.footer {
+    background: #1c1943;
+    color: #1c1943;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid var(#6f22b8);
+    margin-top: 20px;
+  }
+  
+  .footer-logo {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    color: white;
+  }

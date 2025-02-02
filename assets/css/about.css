@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Section */
+
+/* Heading */
+.heading {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 2.5em; /* Adjust font size */
+  font-weight: 700; /* Make the text bolder */
+  letter-spacing: 1px; /* Add letter spacing for a sleek look */
+}
+
+/* Subheading */
+.subheading {
+  text-align: center; 
+  color: #ffffff;
+  font-size: 1.8em; /* Slightly smaller than the main heading */
+  font-weight: 600; /* Slightly lighter than the heading */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make subheadings stand out */
+  letter-spacing: 1px; /* Add letter spacing for a sleek look */
+}
+
+.about-intro {
+  padding-top: 50px;
+  padding-bottom: 35px;
+  text-align: center; /* Container text alignment (center for headings, etc.) */
+}
+
+/* Apply justified text and side margins for paragraphs */
+.about-intro p,
+.vision p,
+.aim p {
+  text-align: justify;
+  margin: 0 .5rem; /* Adjust as needed for more or less spacing */
+}
+
+.vision {
+  width: 50%;
+  padding-bottom: 35px;
+  /* Remove left text-align if you want justification:
+     text-align: left; */
+}
+
+.aim {
+  align-items: end;
+  /* Remove right text-align if you want justification:
+     text-align: right; */
+  margin-left: 50% !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; /* Ensures content is above the overlay */
+}
+
+.container h1 {
+  color: #fff;
+}
+
+.container p {
+  color: #fff;
+}
+
+main {
+  position: relative;
+  min-height: 100vh; /* Changed from height to min-height */
+  font-family: "Poppins", sans-serif;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/about_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2; /* Places the background image behind the overlay */
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Overlay with 60% transparency */
+  z-index: -1; /* Places the overlay between the background and content */
+}
+
+body {
+  background-color: #1c1943;
+}

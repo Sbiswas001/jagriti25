@@ -1,0 +1,105 @@
+/* Body Padding to Accommodate Fixed Navbar */
+body {
+  padding-top: 82px; /* Matches navbar height */
+}
+
+/* Navbar Styling */
+.navbar {
+  background: #1c1943;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Container Layout */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Styling */
+.logo {
+  height: 50px;
+}
+
+/* Navigation Links Styling */
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #007bff;
+}
+
+/* Hamburger Menu Toggle (Hidden by Default) */
+.hamburger-label {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#hamburger {
+  display: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Show Hamburger Icon */
+  .hamburger-label {
+    display: block;
+    margin-left: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Mobile Navigation List */
+  .nav-list {
+    position: fixed;
+    right: -100%; /* Hide off-screen to the right by default */
+    top: 70px; /* Adjust this to match the navbar height */
+    flex-direction: column;
+    background-color: #1c1943;
+    width: 100%;
+    height: calc(100vh - 70px); /* Fill the remaining screen height */
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    overflow-y: auto; /* Add scroll if content overflows */
+  }
+
+  /* Show Navigation List When Hamburger is Checked */
+  #hamburger:checked ~ nav .nav-list {
+    right: 0; /* Slide in from the right */
+  }
+
+  /* Mobile Link Styling */
+  .nav-list a {
+    padding: 0.5rem;
+    display: block;
+  }
+
+  .nav-list a:hover {
+    background-color: #2c8eec;
+    border-radius: 4px;
+  }
+}
