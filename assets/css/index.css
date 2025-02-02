@@ -242,7 +242,7 @@ body {
 
 .vision {
   position: relative;
-  background-image: url(/assets/images/vision_background_image.jpg);
+  background-image: url(assets/images/vision_background_image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,7 +296,8 @@ body {
 
 .aim {
   position: relative;
-  background-image: url(/assets/images/aim_background_image.jpg); /* Add the correct background image */
+  background-image: url(assets/images/aim_background_image.jpg);
+    /* Add the correct background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
