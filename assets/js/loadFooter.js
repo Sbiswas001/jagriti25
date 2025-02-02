@@ -1,6 +1,6 @@
 // loadFooter.js
 function loadFooter() {
-  fetch('pages/components/footer.html')
+  fetch('/jagriti25/pages/components/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;

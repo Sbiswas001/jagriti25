@@ -1,6 +1,6 @@
 // loadNavbar.js
 function loadNavbar() {
-  fetch('pages/components/navbar.html')
+  fetch('/jagriti25/pages/components/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
