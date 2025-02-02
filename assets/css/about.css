@@ -88,6 +88,7 @@ main::after {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -2; /* Places the background image behind the overlay */
+  filter: blur(10px);
 }
 
 main::before {
